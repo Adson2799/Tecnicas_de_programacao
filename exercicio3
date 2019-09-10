@@ -1,0 +1,54 @@
+package tecnicasdeprogramacao;
+
+import java.util.Scanner;
+
+public class Exercicios {
+    public static void main(String[] args) {
+        
+        System.out.println("Informe o salário do primeiro empregado por hora: ");
+        Scanner s1 = new Scanner(System.in);
+        double salario1 = s1.nextDouble();
+        System.out.println("Quantas horas semanais o primeiro empregado trabalhou? ");
+        Scanner h1 = new Scanner(System.in);
+        int hora1 = h1.nextInt();
+
+        if(hora1 <= 40){
+            double bruto1 = salario1 * hora1;
+            System.out.println("Salário bruto R$"+ bruto1);
+        }else{
+            double bruto1 = salario1 * hora1 + ((hora1 - 40)* 1.5);
+            System.out.println("Salário bruto R$"+ bruto1);
+        }
+
+        System.out.println("Informe o salário do segundo empregado por hora: ");
+        Scanner s2 = new Scanner(System.in);
+        double salario2 = s2.nextDouble();
+        System.out.println("Quantas horas semanais o segundo empregado trabalhou? ");
+        Scanner h2 = new Scanner(System.in);
+        int hora2 = h2.nextInt();
+
+        if(hora2 <= 40){
+            double bruto2 = salario2 * hora2;
+            System.out.println("Salário bruto R$"+ bruto2);
+        }else{
+            double bruto2 = salario2 * hora2 + ((hora2 - 40)* 1.5);
+            System.out.println("Salário bruto R$"+ bruto2);
+        }
+
+        System.out.println("Informe o salário do terceiro empregado por hora: ");
+        Scanner s3 = new Scanner(System.in);
+        double salario3 = s3.nextDouble();
+        System.out.println("Quantas horas semanais o terceiro empregado trabalhou? ");
+        Scanner h3 = new Scanner(System.in);
+        int hora3 = h3.nextInt();
+        
+        if(hora3 <= 40){
+            double bruto3 = salario3 * hora3;
+            System.out.println("Salário bruto R$"+ bruto3);
+        }else{
+            double bruto3 = salario3 * hora3 + ((hora3 - 40)* 1.5);
+            System.out.println("Salário bruto R$"+ bruto3);
+        }
+        
+    }
+}
