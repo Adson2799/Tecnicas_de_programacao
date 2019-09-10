@@ -1,0 +1,30 @@
+package tecnicasdeprogramacao;
+
+import java.util.Scanner;
+
+public class Exercicios {
+    public static void main(String[] args) {
+
+        System.out.println("Informe a quantidade vendidas na última semana do item 1: ");
+        Scanner it1 = new Scanner(System.in);
+        int qtd1 = it1.nextInt();
+
+        System.out.println ("Informe a quantidade vendidas na última semana do item 2: ");
+        Scanner it2 = new Scanner(System.in);
+        int qtd2 = it2.nextInt();
+
+        System.out.println ("Informe a quantidade vendidas na última semana do item 3: ");
+        Scanner it3 = new Scanner(System.in);
+        int qtd3 = it3.nextInt();
+
+        System.out.println ("Informe a quantidade vendidas na última semana do item 4: ");
+        Scanner it4 = new Scanner(System.in);
+        int qtd4 = it4.nextInt();
+
+        double soma = (qtd1 * 239.99) + (qtd2 * 129.75) + (qtd3 * 99.95) + (qtd4 * 350.89);
+        double total = soma + 200 + (soma * 0.09);
+
+        System.out.println("O rendimento do vendedor foi de R$" + total);
+        
+    }
+}
